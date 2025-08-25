@@ -1,0 +1,69 @@
+{
+  "name": "react-blog-module",
+  "version": "0.1.0",
+  "description": "Embeddable markdown blog page",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "development": "./index.ts",
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./config": {
+      "development": "./config.ts",
+      "types": "./dist/config.d.ts",
+      "import": "./dist/config.js"
+    }
+  },
+  "files": [
+    "dist",
+    "*.ts",
+    "*.tsx",
+    "mdx/",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
+    "lucide-react": "^0.456.0",
+    "next-mdx-remote": "^5.0.0",
+    "react-markdown": "^9.1.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.1",
+    "@types/react-dom": "^19.1.2",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit --skipLibCheck"
+  },
+  "keywords": [
+    "blog",
+    "mdx",
+    "react",
+    "typescript"
+  ],
+  "author": "Ivan Chebykin",
+  "license": "MIT",
+  "readme": "README.md",
+  "homepage": "https://github.com/sourcewizard-ai/react-blog-module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sourcewizard-ai/react-blog-module.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sourcewizard-ai/react-blog-module/issues"
+  }
+}
