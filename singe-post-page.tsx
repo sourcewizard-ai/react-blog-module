@@ -3,7 +3,6 @@ import { getPostBySlug, getAllPosts } from "./mdx";
 import { formatDate } from "./util";
 import { AuthorCard } from "./author-card";
 import { BlogConfig } from "./config";
-import type { MDXComponents } from "mdx/types";
 import { mdxComponents } from "./mdx/components";
 import React from "react";
 
@@ -95,7 +94,7 @@ export default async function SingleBlogPost({
           </div>
         </header>
         <div className="prose prose-invert max-w-none">
-          <MDXRemote source={content} components={mdxComponents as MDXComponents} />
+          <MDXRemote source={content} components={mdxComponents} />
         </div>
         <AuthorCard config={config} authorId={frontmatter.author} />
       </article>
