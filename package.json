@@ -1,6 +1,6 @@
 {
   "name": "react-blog-module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Embeddable markdown blog page",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -15,6 +15,51 @@
       "development": "./config.ts",
       "types": "./dist/config.d.ts",
       "import": "./dist/config.js"
+    },
+    "./posts": {
+      "development": "./posts.ts",
+      "types": "./dist/posts.d.ts",
+      "import": "./dist/posts.js"
+    },
+    "./mdx": {
+      "development": "./mdx.ts",
+      "types": "./dist/mdx.d.ts",
+      "import": "./dist/mdx.js"
+    },
+    "./util": {
+      "development": "./util.ts",
+      "types": "./dist/util.d.ts",
+      "import": "./dist/util.js"
+    },
+    "./author-card": {
+      "development": "./author-card.tsx",
+      "types": "./dist/author-card.d.ts",
+      "import": "./dist/author-card.js"
+    },
+    "./posts-page": {
+      "development": "./posts-page.tsx",
+      "types": "./dist/posts-page.d.ts",
+      "import": "./dist/posts-page.js"
+    },
+    "./singe-post-page": {
+      "development": "./singe-post-page.tsx",
+      "types": "./dist/singe-post-page.d.ts",
+      "import": "./dist/singe-post-page.js"
+    },
+    "./mdx/components": {
+      "development": "./mdx/components.tsx",
+      "types": "./dist/mdx/components.d.ts",
+      "import": "./dist/mdx/components.js"
+    },
+    "./mdx/code-block": {
+      "development": "./mdx/code-block.tsx",
+      "types": "./dist/mdx/code-block.d.ts",
+      "import": "./dist/mdx/code-block.js"
+    },
+    "./mdx/task": {
+      "development": "./mdx/task.tsx",
+      "types": "./dist/mdx/task.d.ts",
+      "import": "./dist/mdx/task.js"
     }
   },
   "files": [
