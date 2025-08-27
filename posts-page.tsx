@@ -16,7 +16,7 @@ export async function getMetadata(config: BlogConfig): Promise<BlogMetadata> {
 
 export async function BlogPostsPage({ config }: { config: BlogConfig }) {
   const posts = await getAllPosts(config);
-  const publishedPosts = posts.filter(post => !post.frontmatter.draft);
+  const publishedPosts = process.env.NODE_ENV === 'development' ? posts : posts.filter(post => !post.frontmatter.draft);
 
   return (
     <main className="py-8 min-h-screen">
